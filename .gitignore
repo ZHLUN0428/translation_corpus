@@ -1,0 +1,53 @@
+# ===========================
+# 1. 專案特定忽略 (Project Specific)
+# ===========================
+# 忽略所有 zh- 開頭資料夾內的 data 和 models
+zh-*/data/
+zh-*/models/
+
+# 如果您未來有其他的語言對 (例如 vi-en)，上面的寫法也會自動生效。
+# 也可以針對特定檔案類型忽略 (例如訓練過程產生的暫存檔)
+*.tmp
+*.checkpoint
+
+# ===========================
+# 2. Python 開發相關
+# ===========================
+# 編譯檔案
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虛擬環境 (Virtual Environments)
+venv/
+env/
+.env
+.venv/
+
+# ===========================
+# 3. 作業系統雜檔 (OS Files)
+# ===========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===========================
+# 4. 編輯器設定 (IDE / Editors)
+# ===========================
+# VS Code (通常建議忽略，除非團隊強制共用設定)
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# ===========================
+# 5. 其他
+# ===========================
+*.log
