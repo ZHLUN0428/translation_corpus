@@ -1,0 +1,32 @@
+INSTALLATION (subword-nmt)
+------------
+
+install via pip (from PyPI):
+
+    pip install subword-nmt
+
+install via pip (from Github):
+
+    pip install https://github.com/rsennrich/subword-nmt/archive/master.zip
+
+alternatively, clone this repository; the scripts are executable stand-alone.
+
+INSTALLATION (Moses)
+------------
+Instructions for building and installing Moses are online:
+   http://www.statmt.org/moses/?n=Development.GetStarted
+If you have g++ and Boost installed, and you want the default compilation with most of things you need, then run:
+   ./bjam -j4
+
+Questions should be directed to the mailing list (don't forget to register before sending emails):
+   http://mailman.mit.edu/mailman/listinfo/moses-support
+   https://github.com/moses-smt/mosesdecoder/compare/master...hieu2
+
+Some of the code is not originally part of Moses, but is periodically copied
+into the source tree from elsewhere:
+
+ * "bjam-files" is taken from Boost.
+ * "util" and "lm" are taken from KenLM: https://github.com/kpu/kenlm
+
+
+
